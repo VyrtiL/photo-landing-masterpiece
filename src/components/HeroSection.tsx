@@ -7,7 +7,7 @@ const slides = [
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80',
-    title: 'Capture Life's Beautiful Moments',
+    title: "Capture Life's Beautiful Moments",
     subtitle: 'Professional photography that tells your story'
   },
   {
