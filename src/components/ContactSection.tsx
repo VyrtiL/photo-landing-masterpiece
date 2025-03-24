@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -173,8 +174,8 @@ const ContactSection = () => {
                           }
                         </svg>
                       </a>
-                    ))
-                  }
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
