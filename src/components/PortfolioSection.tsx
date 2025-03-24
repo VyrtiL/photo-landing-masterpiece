@@ -4,50 +4,50 @@ import { cn } from '@/lib/utils';
 import { Image, Plus } from 'lucide-react';
 
 // Portfolio categories and images
-const categories = ['All', 'Portrait', 'Landscape', 'Wedding', 'Commercial'];
+const categories = ['Все', 'Портреты', 'Пейзажи', 'Свадьбы', 'Коммерческие'];
 
 const portfolioItems = [
   {
     id: 1,
-    category: 'Portrait',
+    category: 'Портреты',
     image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Urban Portrait',
-    description: 'Modern city portrait session'
+    title: 'Городской портрет',
+    description: 'Современная фотосессия в городе'
   },
   {
     id: 2,
-    category: 'Landscape',
+    category: 'Пейзажи',
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Morning Fog',
-    description: 'Mountain landscape at dawn'
+    title: 'Утренний туман',
+    description: 'Горный пейзаж на рассвете'
   },
   {
     id: 3,
-    category: 'Wedding',
+    category: 'Свадьбы',
     image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Eternal Love',
-    description: 'Spring wedding ceremony'
+    title: 'Вечная любовь',
+    description: 'Весенняя свадебная церемония'
   },
   {
     id: 4,
-    category: 'Commercial',
+    category: 'Коммерческие',
     image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Creative Workspace',
-    description: 'Modern tech office setup'
+    title: 'Креативное рабочее пространство',
+    description: 'Современный офис технологической компании'
   },
   {
     id: 5,
-    category: 'Portrait',
+    category: 'Портреты',
     image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'City Lights',
-    description: 'Nighttime urban portrait'
+    title: 'Городские огни',
+    description: 'Ночной городской портрет'
   },
   {
     id: 6,
-    category: 'Landscape',
+    category: 'Пейзажи',
     image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Natural Wonder',
-    description: 'Wildlife in natural setting'
+    title: 'Природное чудо',
+    description: 'Дикая природа в естественной среде'
   }
 ];
 
@@ -98,8 +98,8 @@ const PortfolioSection = () => {
     <section id="portfolio" className="py-24 bg-secondary/40">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Portfolio</h2>
-          <p className="text-muted-foreground">Explore our diverse collection of photographic work</p>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Портфолио</h2>
+          <p className="text-muted-foreground">Исследуйте нашу разнообразную коллекцию фотографических работ</p>
         </div>
 
         {/* Category Filter */}
@@ -154,7 +154,7 @@ const PortfolioSection = () => {
         {/* View More Button */}
         <div className="mt-12 text-center">
           <button className="border border-primary text-primary hover:bg-primary/5 px-8 py-3 rounded-full transition-all duration-300">
-            Load More
+            Загрузить еще
           </button>
         </div>
 

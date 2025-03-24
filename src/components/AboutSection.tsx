@@ -1,13 +1,12 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { Camera, Award, Users, Heart } from 'lucide-react';
 
 const stats = [
-  { icon: <Camera className="w-6 h-6" />, value: '10+', label: 'Years of Experience' },
-  { icon: <Award className="w-6 h-6" />, value: '150+', label: 'Projects Completed' },
-  { icon: <Users className="w-6 h-6" />, value: '80+', label: 'Satisfied Clients' },
-  { icon: <Heart className="w-6 h-6" />, value: '15+', label: 'Awards Won' },
+  { icon: <Camera className="w-6 h-6" />, value: '10+', label: 'Лет опыта' },
+  { icon: <Award className="w-6 h-6" />, value: '150+', label: 'Выполненных проектов' },
+  { icon: <Users className="w-6 h-6" />, value: '80+', label: 'Довольных клиентов' },
+  { icon: <Heart className="w-6 h-6" />, value: '15+', label: 'Полученных наград' },
 ];
 
 const AboutSection = () => {
@@ -65,7 +64,7 @@ const AboutSection = () => {
             <div className="relative rounded-lg overflow-hidden shadow-xl image-reveal">
               <img 
                 src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" 
-                alt="Photographer at work" 
+                alt="Фотограф за работой" 
                 className="w-full h-auto object-cover aspect-[3/4]"
               />
               
@@ -87,12 +86,12 @@ const AboutSection = () => {
           
           {/* Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">About Me</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-semibold mb-6">Обо мне</h2>
             <p className="text-muted-foreground mb-6">
-              I'm a passionate photographer with over 10 years of professional experience. My approach combines technical excellence with an artistic vision to create images that capture the essence of each moment.
+              Я увлеченный фотограф с более чем 10-летним профессиональным опытом. Мой подход сочетает техническое со��ершенство с художественным видением, чтобы создавать изображения, которые передают суть каждого момента.
             </p>
             <p className="text-muted-foreground mb-8">
-              Whether I'm shooting landscapes, portraits, or events, I strive to tell a compelling visual story that resonates with viewers. My work has been featured in various publications and has earned recognition in international photography competitions.
+              Будь то съемка пейзажей, портретов или мероприятий, я стремлюсь рассказать увлекательную визуальную историю, которая находит отклик у зрителей. Мои работы были представлены в различных публикациях и получили признание на международных фотоконкурсах.
             </p>
             
             {/* Stats */}

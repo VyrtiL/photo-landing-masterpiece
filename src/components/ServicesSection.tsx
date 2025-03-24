@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { User, Mountain, Heart, Building, Camera, Check } from 'lucide-react';
@@ -6,27 +5,27 @@ import { User, Mountain, Heart, Building, Camera, Check } from 'lucide-react';
 const services = [
   {
     icon: <User className="w-6 h-6" />,
-    title: 'Portrait Photography',
-    description: 'Capture your personality and emotions in carefully composed professional portraits.',
-    features: ['Indoor/Outdoor Sessions', 'Professional Retouching', 'Multiple Outfit Changes', 'Digital & Print Delivery']
+    title: 'Портретная фотография',
+    description: 'Запечатлейте вашу индивидуальность и эмоции в тщательно продуманных профессиональных портретах.',
+    features: ['Съемка в помещении/на улице', 'Профессиональная ретушь', 'Смена нескольких образов', 'Цифровая и печатная доставка']
   },
   {
     icon: <Mountain className="w-6 h-6" />,
-    title: 'Landscape Photography',
-    description: 'Stunning landscape imagery that showcases the beauty of nature in its finest details.',
-    features: ['Golden Hour Shots', 'Panoramic Views', 'Weather Planning', 'Fine Art Prints Available']
+    title: 'Пейзажная фотография',
+    description: 'Потрясающие пейзажные изображения, которые демонстрируют красоту природы в мельчайших деталях.',
+    features: ['Съемка в золотой час', 'Панорамные виды', 'Планирование погоды', 'Доступны художественные отпечатки']
   },
   {
     icon: <Heart className="w-6 h-6" />,
-    title: 'Wedding Photography',
-    description: 'Preserve your special day with a perfect blend of candid moments and artistic compositions.',
-    features: ['Full Day Coverage', 'Second Photographer', 'Engagement Session', 'Custom Wedding Album']
+    title: 'Свадебная фотография',
+    description: 'Сохраните ваш особенный день с идеальным сочетанием непринужденных моментов и художественных композиций.',
+    features: ['Полный день съемки', 'Второй фотограф', 'Сессия помолвки', 'Индивидуальный свадебный альбом']
   },
   {
     icon: <Building className="w-6 h-6" />,
-    title: 'Commercial Photography',
-    description: 'Professional imagery for businesses that helps showcase products and services effectively.',
-    features: ['Product Photography', 'Corporate Headshots', 'Real Estate', 'Social Media Content']
+    title: 'Коммерческая фотография',
+    description: 'Профессиональные изображения для бизнеса, которые помогают эффективно представить продукты и услуги.',
+    features: ['Продуктовая фотография', 'Корпоративные портреты', 'Недвижимость', 'Контент для социальных сетей']
   }
 ];
 
@@ -61,9 +60,9 @@ const ServicesSection = () => {
     <section id="services" className="py-24 bg-gradient-to-b from-white to-secondary/40 dark:from-black dark:to-gray-900/40">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">My Services</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Мои услуги</h2>
           <p className="text-muted-foreground">
-            Comprehensive photography services tailored to your unique needs
+            Комплексные фотоуслуги, адаптированные под ваши уникальные потребности
           </p>
         </div>
         
@@ -100,7 +99,7 @@ const ServicesSection = () => {
                   href="#contact" 
                   className="text-primary font-medium text-sm hover:underline inline-flex items-center gap-1"
                 >
-                  Book This Service
+                  Заказать эту услугу
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -111,13 +110,13 @@ const ServicesSection = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-6">Need something specific? Let's discuss your custom photography needs</p>
+          <p className="text-muted-foreground mb-6">Нужно что-то особенное? Давайте обсудим ваши индивидуальные фотопотребности</p>
           <a 
             href="#contact" 
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-300"
           >
             <Camera className="w-5 h-5" />
-            Contact Me
+            Связаться со мной
           </a>
         </div>
       </div>

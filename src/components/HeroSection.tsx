@@ -7,20 +7,20 @@ const slides = [
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80',
-    title: "Capture Life's Beautiful Moments",
-    subtitle: 'Professional photography that tells your story'
+    title: "Запечатлейте прекрасные моменты жизни",
+    subtitle: 'Профессиональная фотография, которая расскажет вашу историю'
   },
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1920&q=80',
-    title: 'Every Frame Tells a Story',
-    subtitle: 'Creating timeless memories through the lens'
+    title: 'Каждый кадр рассказывает историю',
+    subtitle: 'Создание вечных воспоминаний через объектив'
   },
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1920&q=80',
-    title: 'Art Through the Lens',
-    subtitle: 'Where vision meets passion in every shot'
+    title: 'Искусство через объектив',
+    subtitle: 'Где видение встречается со страстью в каждом кадре'
   }
 ];
 
@@ -133,7 +133,7 @@ const HeroSection = () => {
                 index === current ? 'animate-fade-in' : ''
               )}
             >
-              View Portfolio
+              Смотреть портфолио
             </a>
           </div>
         </div>

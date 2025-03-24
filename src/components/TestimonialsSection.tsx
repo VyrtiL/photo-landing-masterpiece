@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -6,34 +5,34 @@ import { Quote, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Alexandra Green',
-    role: 'Wedding Client',
+    name: 'Александра Зеленова',
+    role: 'Свадебный клиент',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80',
-    quote: 'Working with this photographer was the best decision we made for our wedding. The photos captured every emotion and special moment perfectly. Truly a master of light and composition!',
+    quote: 'Работа с этим фотографом была лучшим решением для нашей свадьбы. Фотографии идеально запечатлели каждую эмоцию и особый момент. Настоящий мастер света и композиции!',
     rating: 5
   },
   {
     id: 2,
-    name: 'Michael Roberts',
-    role: 'Corporate Client',
+    name: 'Михаил Романов',
+    role: 'Корпоративный клиент',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80',
-    quote: 'The corporate portraits exceeded our expectations. Every team member looked professional yet approachable. The turnaround time was impressively fast without compromising quality.',
+    quote: 'Корпоративные портреты превзошли наши ожидания. Каждый член команды выглядел профессионально и в то же время доступно. Время выполнения заказа было впечатляюще быстрым без ущерба для качества.',
     rating: 5
   },
   {
     id: 3,
-    name: 'Sophia Chen',
-    role: 'Portrait Session',
+    name: 'София Чен',
+    role: 'Портретная сессия',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80',
-    quote: 'I was nervous about my portrait session, but the photographer made me feel so comfortable. The results were stunning - I\'ve never had photos that captured my personality so well.',
+    quote: 'Я нервничала перед портретной сессией, но фотограф помог мне почувствовать себя комфортно. Результаты были потрясающими - у меня никогда не было фотографий, которые так хорошо передавали бы мою индивидуальность.',
     rating: 5
   },
   {
     id: 4,
-    name: 'David Wilson',
-    role: 'Real Estate Agent',
+    name: 'Давид Вильсон',
+    role: 'Агент по недвижимости',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80',
-    quote: 'The property photos were exceptional. Each space was captured in the perfect light, making our listings stand out from the competition. Will definitely use these services again!',
+    quote: 'Фотографии объектов были исключительными. Каждое пространство было запечатлено в идеальном свете, что выделяло наши объявления среди конкурентов. Обязательно воспользуюсь этими услугами снова!',
     rating: 5
   }
 ];
@@ -87,9 +86,9 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="py-24 bg-primary/5">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">What Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Что говорят клиенты</h2>
           <p className="text-muted-foreground">
-            Hear from people who have experienced my photography services
+            Мнения людей, которые воспользовались моими фотоуслугами
           </p>
         </div>
         

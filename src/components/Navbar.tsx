@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Camera } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -21,12 +20,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Главная', href: '#home' },
+    { name: 'Портфолио', href: '#portfolio' },
+    { name: 'Обо мне', href: '#about' },
+    { name: 'Услуги', href: '#services' },
+    { name: 'Отзывы', href: '#testimonials' },
+    { name: 'Контакты', href: '#contact' },
   ];
 
   return (
@@ -47,7 +46,7 @@ const Navbar = () => {
           <span className={cn(
             'transition-colors duration-300',
             isScrolled ? 'text-primary' : 'text-white text-shadow-sm'
-          )}>Photocraft</span>
+          )}>ФотоАрт</span>
         </a>
 
         {/* Desktop Navigation */}

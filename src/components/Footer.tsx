@@ -19,10 +19,10 @@ const Footer = () => {
           <div>
             <a href="#home" className="flex items-center gap-2 text-xl font-display font-medium mb-4">
               <Camera size={24} />
-              <span>Photocraft</span>
+              <span>ФотоАрт</span>
             </a>
             <p className="text-white/80 text-sm mb-6">
-              Capturing life's precious moments with artistic vision and technical excellence.
+              Запечатление ценных моментов жизни с художественным видением и техническим совершенством.
             </p>
             <div className="flex space-x-4">
               {['instagram', 'facebook', 'twitter', 'linkedin'].map((social) => (
@@ -30,7 +30,7 @@ const Footer = () => {
                   key={social}
                   href={`https://${social}.com`}
                   className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300"
-                  aria-label={`Visit ${social}`}
+                  aria-label={`Посетить ${social}`}
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     {/* SVG paths same as in ContactSection */}
@@ -54,18 +54,24 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-display font-medium mb-4">Quick Links</h3>
+            <h3 className="text-lg font-display font-medium mb-4">Быстрые ссылки</h3>
             <ul className="space-y-2">
-              {['Home', 'Portfolio', 'About', 'Services', 'Contact'].map((link) => (
-                <li key={link}>
+              {[
+                { name: 'Главная', link: 'home' },
+                { name: 'Портфолио', link: 'portfolio' },
+                { name: 'Обо мне', link: 'about' },
+                { name: 'Услуги', link: 'services' },
+                { name: 'Контакты', link: 'contact' }
+              ].map((link) => (
+                <li key={link.name}>
                   <a 
-                    href={`#${link.toLowerCase()}`}
+                    href={`#${link.link}`}
                     className="text-white/80 hover:text-white transition-colors inline-flex items-center gap-1"
                   >
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -74,9 +80,15 @@ const Footer = () => {
           
           {/* Services */}
           <div>
-            <h3 className="text-lg font-display font-medium mb-4">Services</h3>
+            <h3 className="text-lg font-display font-medium mb-4">Услуги</h3>
             <ul className="space-y-2">
-              {['Portrait Photography', 'Wedding Photography', 'Commercial Photography', 'Event Coverage', 'Photo Retouching'].map((service) => (
+              {[
+                'Портретная фотография', 
+                'Свадебная фотография', 
+                'Коммерческая фотография', 
+                'Съемка мероприятий', 
+                'Ретушь фотографий'
+              ].map((service) => (
                 <li key={service}>
                   <a 
                     href="#services"
@@ -94,21 +106,21 @@ const Footer = () => {
           
           {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-display font-medium mb-4">Newsletter</h3>
+            <h3 className="text-lg font-display font-medium mb-4">Рассылка</h3>
             <p className="text-white/80 text-sm mb-4">
-              Subscribe to receive updates on new work and special offers.
+              Подпишитесь, чтобы получать обновления о новых работах и специальных предложениях.
             </p>
             <form className="flex">
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder="Ваш email"
                 className="bg-white/10 border border-white/20 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/30 text-white placeholder:text-white/50 w-full"
               />
               <button
                 type="submit"
                 className="bg-white text-primary px-4 rounded-r-lg hover:bg-white/90 transition-colors"
               >
-                Join
+                Подписаться
               </button>
             </form>
           </div>
@@ -116,7 +128,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Photocraft. All rights reserved. Crafted with <Heart size={12} className="inline text-red-400" /> by a photographer for photographers.
+            &copy; {new Date().getFullYear()} ФотоАрт. Все права защищены. Создано с <Heart size={12} className="inline text-red-400" /> фотографом для фотографов.
           </p>
           
           <button
